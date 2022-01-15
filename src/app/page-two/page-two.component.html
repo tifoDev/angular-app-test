@@ -1,0 +1,12 @@
+<h3>Page-TWO works!</h3>
+<div>
+  <a [routerLink]="['/page-one']" routerLinkActive="router-link-active">Page One</a>
+  <br>
+  <a [routerLink]="['/']" routerLinkActive="router-link-active">Page Default</a>
+</div>
+<div>
+  <button (click)="getAlgodonJson()">GET API</button>
+</div>
+<div>
+  {{ res ? (res | json) : 'SIN RESPUESTA'}}
+</div>
